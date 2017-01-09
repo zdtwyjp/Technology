@@ -11,11 +11,11 @@ public class Classifier {
             return "NUMERAL ";
         if ("abcdefghijklmnopqrstuvwxyz".indexOf(ch) >= 0)
             return "LETTER ";
-///*
-// *      (Operators not supported yet) 
-// *      if ("+-*/&|!=".indexOf(ch) >= 0)
-// *          return "OPERATOR "; 
-// */
+/*
+ *      (Operators not supported yet) 
+ *      if ("+-*/&|!=".indexOf(ch) >= 0)
+ *          return "OPERATOR "; 
+ */
         return "UNKNOWN "; 
     } 
 }
