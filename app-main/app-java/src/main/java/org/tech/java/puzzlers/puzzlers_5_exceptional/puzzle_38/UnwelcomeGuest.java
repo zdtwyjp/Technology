@@ -1,7 +1,7 @@
 package org.tech.java.puzzlers.puzzlers_5_exceptional.puzzle_38;
 
 public class UnwelcomeGuest {
-    /*public static final long GUEST_USER_ID = -1;
+    public static final long GUEST_USER_ID = -1;
 
     private static final long USER_ID;
     static {
@@ -20,7 +20,7 @@ public class UnwelcomeGuest {
 
     public static void main(String[] args) {
         System.out.println("User ID: " + USER_ID);
-    }*/
+    }
 }
 
 class IdUnavailableException extends Exception { 
