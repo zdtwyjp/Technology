@@ -12,7 +12,8 @@ public class SuspiciousSort {
 
         Comparator<Integer> cmp = new Comparator<Integer>() {
             public int compare(Integer i1, Integer i2) {
-                return i2 - i1;
+//            	return i1 - i2;
+                return (i1 > i2 ? 1 : (i1 < i2 ? -1 : 0));
             }
         };
         Arrays.sort(arr, cmp);

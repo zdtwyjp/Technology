@@ -26,20 +26,24 @@ public class OneLiners {
     // Part A
     static <E> List<E> withoutDuplicates(List<E> original) {
         // Your code goes here
+    	return new ArrayList<E>(new LinkedHashSet<E>(original));
     }
 
     // Part B
     static String[] parse(String string) {
         // Your code goes here
+    	return string.split(".\\S*");
     }
 
     // Part C
     static String arrayToString(Object[] array) {
         // Your code goes here
+    	return Arrays.deepToString(array);
     }
 
     // Part D
     static boolean hasMoreBitsSet(int i, int j) {
         // Your code goes here
+    	return Integer.bitCount(i) > Integer.bitCount(j);
     }
 }

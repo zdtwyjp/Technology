@@ -3,7 +3,7 @@ import org.tech.java.puzzlers.puzzlers_8_classier.puzzle_70.click.CodeTalk;
 
 public class TypeIt {
     private static class ClickIt extends CodeTalk {
-        void printMessage() {
+    	void printMessage() {
             System.out.println("Hack");
         }
     }

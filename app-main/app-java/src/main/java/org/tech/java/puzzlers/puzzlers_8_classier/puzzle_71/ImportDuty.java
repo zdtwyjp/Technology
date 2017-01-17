@@ -1,6 +1,6 @@
 package org.tech.java.puzzlers.puzzlers_8_classier.puzzle_71;
 
-import static java.util.Arrays.toString;
+import java.util.Arrays;
 
 class ImportDuty {
     public static void main(String[] args) {
@@ -8,6 +8,6 @@ class ImportDuty {
     }
 
     static void printArgs(Object... args) {
-        System.out.println(toString(args));
+        System.out.println(Arrays.toString(args));
     }
 }

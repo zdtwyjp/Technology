@@ -13,7 +13,7 @@ class String {
     public String(java.lang.String s) {
         this.s = s;
     }
-
+    
     public java.lang.String toString() {
         return s;
     }

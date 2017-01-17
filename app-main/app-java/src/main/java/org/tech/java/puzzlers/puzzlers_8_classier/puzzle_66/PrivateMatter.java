@@ -10,6 +10,7 @@ class Derived extends Base {
 
 public class PrivateMatter {
     public static void main(String[] args) {
-        System.out.println(new Derived().className);
+//    	System.out.println(new Derived().className);
+        System.out.println(((Base)(new Derived())).className);
     }
 }
