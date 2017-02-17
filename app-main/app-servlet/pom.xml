@@ -1,9 +1,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>app-main</groupId>
-  <artifactId>app-main</artifactId>
-  <version>1.0</version>
-  <packaging>pom</packaging>
+  <parent>
+    <groupId>app-main</groupId>
+    <artifactId>app-main</artifactId>
+    <version>1.0</version>
+  </parent>
+  <artifactId>app-servlet</artifactId>
   <build>
     <plugins>
       <plugin>
@@ -15,15 +17,4 @@
       </plugin>
     </plugins>
   </build>
-  <modules>
-  	<module>app-activiti</module>
-  	<module>app-js</module>
-  	<module>app-jquery</module>
-  	<module>app-angularjs</module>
-  	<module>app-java</module>
-  	<module>app-tomcat</module>
-  	<module>app-bootstrap</module>
-  	<module>app-js-plugin</module>
-  	<module>app-servlet</module>
-  </modules>
 </project>
