@@ -26,5 +26,6 @@
   	<module>app-js-plugin</module>
   	<module>app-servlet</module>
   	<module>app-spring</module>
+  	<module>app-hibernate</module>
   </modules>
 </project>
