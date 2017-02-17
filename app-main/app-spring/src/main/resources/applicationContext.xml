@@ -130,6 +130,15 @@
 		<aop:pointcut id="servicesPointcut" expression="execution(* org.tech..service.*ServiceImpl.*(..))" />
 		<aop:advisor pointcut-ref="servicesPointcut" advice-ref="txAdvice" />
 	</aop:config>
+	
+	<!-- 以下注入较特殊，shiro认证是需要，注解无法自动注入。 -->
+	<!-- DAO Bean -->
+	<bean id="baseDao" class="org.tech.spring.dao.BaseDaoImpl" autowire="byName">
+		<property name="sessionFactory" ref="sessionFactory"/>
+	</bean>
+	
+	<!-- Service Bean -->
+	<bean id="baseService" class="org.tech.spring.service.BaseServiceImpl" autowire="byName"/>
 
 	<!-- 文件上传拦截 (最大40MB) -->
 	<bean id="multipartResolver"
