@@ -25,5 +25,6 @@
   	<module>app-bootstrap</module>
   	<module>app-js-plugin</module>
   	<module>app-servlet</module>
+  	<module>app-spring</module>
   </modules>
 </project>
