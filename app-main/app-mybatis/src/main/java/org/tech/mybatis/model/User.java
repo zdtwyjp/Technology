@@ -1,4 +1,4 @@
-package org.tech.mybatis.pojo;
+package org.tech.mybatis.model;
 
 public class User {
 	private Integer id;

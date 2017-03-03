@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="org.tech.mybatis.dao.UserDao">
-	<resultMap id="BaseResultMap" type="org.tech.mybatis.pojo.User">
+	<resultMap id="BaseResultMap" type="org.tech.mybatis.model.User">
 		<id column="id" jdbcType="INTEGER" property="id" />
 		<result column="user_name" jdbcType="VARCHAR" property="userName" />
 		<result column="password" jdbcType="VARCHAR" property="password" />
@@ -21,14 +21,14 @@
 		delete from user_t
 		where id = #{id,jdbcType=INTEGER}
 	</delete>
-	<insert id="insert" parameterType="org.tech.mybatis.pojo.User">
+	<insert id="insert" parameterType="org.tech.mybatis.model.User">
 		insert into user_t (id, user_name, password,
 		age)
 		values (#{id,jdbcType=INTEGER}, #{userName,jdbcType=VARCHAR},
 		#{password,jdbcType=VARCHAR},
 		#{age,jdbcType=INTEGER})
 	</insert>
-	<insert id="insertSelective" parameterType="org.tech.mybatis.pojo.User">
+	<insert id="insertSelective" parameterType="org.tech.mybatis.model.User">
 		insert into user_t
 		<trim prefix="(" suffix=")" suffixOverrides=",">
 			<if test="id != null">
@@ -59,7 +59,7 @@
 			</if>
 		</trim>
 	</insert>
-	<update id="updateByPrimaryKeySelective" parameterType="org.tech.mybatis.pojo.User">
+	<update id="updateByPrimaryKeySelective" parameterType="org.tech.mybatis.model.User">
 		update user_t
 		<set>
 			<if test="userName != null">
@@ -74,7 +74,7 @@
 		</set>
 		where id = #{id,jdbcType=INTEGER}
 	</update>
-	<update id="updateByPrimaryKey" parameterType="org.tech.mybatis.pojo.User">
+	<update id="updateByPrimaryKey" parameterType="org.tech.mybatis.model.User">
 		update user_t
 		set user_name = #{userName,jdbcType=VARCHAR},
 		password = #{password,jdbcType=VARCHAR},

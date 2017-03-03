@@ -4,7 +4,7 @@ import javax.annotation.Resource;
 
 import org.springframework.stereotype.Service;
 import org.tech.mybatis.dao.UserDao;
-import org.tech.mybatis.pojo.User;
+import org.tech.mybatis.model.User;
 
 @Service("userService")
 public class UserServiceImpl implements UserService {

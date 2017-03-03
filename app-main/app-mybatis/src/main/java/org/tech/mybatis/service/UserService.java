@@ -1,6 +1,6 @@
 package org.tech.mybatis.service;
 
-import org.tech.mybatis.pojo.User;
+import org.tech.mybatis.model.User;
 
 public interface UserService {
 
