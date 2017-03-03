@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>app-main</groupId>
@@ -27,5 +28,8 @@
   	<module>app-servlet</module>
   	<module>app-spring</module>
   	<module>app-hibernate</module>
+    <module>app-db</module>
+    <module>app-mybatis</module>
+    <module>app-mybatis-generator</module>
   </modules>
 </project>
